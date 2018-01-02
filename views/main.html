@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Principal</title>
+    <script src="https://use.fontawesome.com/9470d83244.js"></script>
+    <!-- Framework Boostrap CSS -->
+    <link rel="stylesheet" href="../vendors/bootstrap-3.3.7/css/bootstrap.min.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="../css/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- Titulo -->
+      <div class="row">
+        <h1 class="text-center title-logo">PiuraFoodMap</h1>             
+      </div>
+      <!-- Vista de todos los restaurantes cercanos -->
+      <div class="row">
+        <figure class="col-xs-offset-1 col-xs-10"><img src="" alt="imagen mapa" class="img-map img-responsive"></figure>
+      </div>
+      <!-- Filtro de restaurantes -->
+      <div class="row">
+        <div class="col-xs-offset-1 col-xs-10">
+          <h3 class="text-center">Comida cerca de ti</h3> 
+          <form class="navbar-form navbar-left" role="search">              
+            <input type="text" class="form-control" placeholder="Buscar" id="search"> 
+                  <!--           
+                  <a class="navbar-brand" href="#">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                  </a>
+                -->
+            </form>
+        </div>
+        
+      </div>
+      <!-- Carrusel Galeria de imagenes -->
+      <div class="row gallery">
+        <div class="col-xs-offset-1 col-xs-10">
+          <h4 class="text-center">Restaurantes recomendados</h4>
+          <div class="slider">
+            <a href="#" id="back" class="text-primary-color "><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+            <img src="" alt="" id="imgGallery" class="">  
+            <a href="#" id="next" class="text-primary-color "><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+          </div>
+          <div class="controles"></div>
+        </div>
+      </div>
+      <!-- Contenedor de resultado de busqueda -->
+      <div class="div-result col-xs-12"></div>
+      <!--
+      <div class="div-result flex-center ">
+        <figure class="">
+          <img src="../assets/images/cevillano-ceviche.jpg" alt="" class="img-responsive">
+        </figure>
+        <div class="content">
+          <h4>Trilogía de ceviches</h4>
+          <p>Precio: S/.30.00</p>
+        </div>
+      </div>-->
+      <!-- MODAL -->
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-body">
+              <h3></h3>
+              <img class="img-responsive img-modal">
+              <h4></h4>
+            </div>
+          </div>        
+        </div>
+      </div>
+    </div>    
+    <!-- Libreria JQuery -->
+  <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+  <!-- JS Bootstrap-->
+  <script src="../vendors/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+  <!-- DATA -->
+  <script src="../js/data.js"></script>
+  <!-- JS personalizado -->
+  <script src="../js/main.js"></script>
+  </body>
+</html>

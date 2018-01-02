@@ -1,0 +1,134 @@
+/** Clases generales **/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/** Clases reutilizables **/
+/* altura del viewport */
+.vh100 {
+	height: 100vh;
+  }
+  /* Aplicando flex para centrar */
+  .container-flex-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  }
+  .flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+/** **/
+.index-body {
+  /*background-color: orange; */   
+  background-image: url(../assets/images/main.jpg);  
+	background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+.index-body h1 {
+  color: #FD6F19;
+  font-size: 6em;
+  font-weight: 700;
+}
+.index-body p {
+  color: #fff;
+  font-size: 3.6em;
+  font-weight: 400;
+  line-height: 5em;
+}
+/** Pagina Main **/
+.title-logo {
+	color: #fd8700;
+	font-size: 2.3em;
+}
+.navbar-form {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.img-map {
+  content: url("../assets/images/map_mobile.jpg");
+}
+
+.slider img {
+	max-width: 100%;
+	height: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+ }
+
+a#back, a#next {
+  position: relative;
+}
+
+ i.fa {
+  font-size: 1.8em;
+ }
+
+div.controles {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  left: 15%;           
+}
+.controles .control {
+  border-radius: 50%;
+  margin-left: 1px;
+  margin-top: 5px;
+  width: 18px;
+  height: 18px;
+  background: #9A9DA2;
+  border: #9A9DA2;
+
+
+ }
+
+ .control-click {
+    border-radius: 50%;
+    margin-left: 1px;
+    width: 20px;
+    height:20px;
+    background: rgba(255, 64, 131, 0.068);
+    border-color: rgba(255, 64, 131, 0.068);
+    margin-left: 2px;
+
+ }
+
+ /* Imagenes de busquedad */
+
+ .div-result img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin: 8.33333333%;
+ }
+ .div-result img:hover {
+   cursor: pointer;
+ }
+ .div-result .content{
+  width: 60%;
+  height: 100px;
+  margin-left: 8.3333%;
+  padding-top: 10px;
+  
+ }
+ .div-result h4 {
+  font-weight: 700;
+ }
+ .div-result figure, .div-result .content {
+    display: inline-block;
+ }
+ 
+/*** estilos solo para desktop - tablet ***/
+@media (min-width: 768px) { 
+	/** Pagina Main **/
+  .img-map {
+		content: url("../assets/images/map_destok.jpg");
+	}
+}
